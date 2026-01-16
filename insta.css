@@ -20,7 +20,7 @@ verif::after {
     background-color: #0f1011;
     margin: 20px auto 0;
     padding: 30px 10px;
-    color: black;
+    color: #999999;
     font-size: .8rem;
     box-sizing: content-box;
 }
@@ -68,7 +68,7 @@ verif::after {
     font-size: 1.2rem;
     line-height: 1.2rem;
     font-weight: 300;
-    color: black;
+    color: #999999;
     transform: none !important;
     left: 0 !important;
     letter-spacing: 0 !important;
@@ -93,7 +93,7 @@ verif::after {
 .insta .more {
     background: none !important;
     border-radius: none;
-    color: black;
+    color: #999999;
     font-family: Open Sans !important;
     letter-spacing: 0px !important;
     margin: 0 !important;
@@ -164,7 +164,7 @@ verif::after {
 }
 
 .followed strong {
-    color: black;
+    color: #999999;
     cursor: pointer;
 }
 
