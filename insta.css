@@ -14,9 +14,7 @@ verif::after {
     font-size: 13px;
 }
 
-.insta *,
-.insta *::before,
-.insta *::after {
+.insta {
     box-sizing: border-box;
     position: relative;
     width: 450px;
@@ -25,7 +23,7 @@ verif::after {
     padding: 30px 10px;
     color: #999999;
     font-size: .8rem;
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 .insta .profil {
