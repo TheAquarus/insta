@@ -1,0 +1,299 @@
+/*
+ * insta verified
+ */
+verif {
+    display: inline-block;
+}
+
+verif::after {
+    content: "\f058";
+    display: inline-block;
+    color: #3E99ED;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 13px;
+}
+
+.insta {
+    position: relative;
+    width: 450px;
+    background-color: #0f1011;
+    margin: 20px auto 0;
+    padding: 30px 10px;
+    color: black;
+    font-size: .8rem;
+    box-sizing: content-box;
+}
+
+.insta .profil {
+    display: grid;
+    grid-template: repeat(3, auto) / 100px 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    font-family: Open Sans !important;
+}
+
+.profil-image {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    display: block;
+    justify-self: center;
+    align-self: start;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.insta .btn {
+    display: inline-block;
+    font: inherit;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+.insta .perso {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profil .pseudo {
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 300;
+    color: black;
+    transform: none !important;
+    left: 0 !important;
+    letter-spacing: 0 !important;
+    position: inherit !important;
+    text-align: left !important;
+    text-transform: inherit !important;
+}
+
+.profil-btn {
+    font-size: .8rem !important;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    padding: 0 10px;
+    height: 20px;
+    font-weight: 600 !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.insta .more {
+    background: none !important;
+    border-radius: none;
+    color: black;
+    font-family: Open Sans !important;
+    letter-spacing: 0px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-shadow: none !important;
+    text-transform: lowercase !important;
+}
+
+.insta .more::after {
+    content: "";
+    cursor: pointer;
+    background-image: url(https: //img.lght.pics/2b9F.png);
+    width: 20px;
+    height: 20px;
+    background-size: 20px auto;
+}
+
+.insta .stat {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: .8rem !important;
+    line-height: 1rem !important;
+}
+
+.insta .stat span {
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.insta .stat span::last-of-type {
+    margin-right: 0;
+}
+
+.stat .posts::after {
+    content: " posts";
+    font-weight: 500;
+}
+
+.stat .followers::after {
+    content: " followers";
+    font-weight: 500;
+}
+
+.stat .following::after {
+    content: " following";
+    font-weight: 500;
+}
+
+.insta .bio {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: .8rem !important;
+    line-height: 1rem !important;
+    text-align: left;
+}
+
+.insta .bio a {
+    color: #003569;
+    font-weight: 600;
+}
+
+.insta .followed {
+    font-size: .6rem;
+    line-height: .6rem;
+    color: #999;
+}
+
+.followed strong {
+    color: black;
+    cursor: pointer;
+}
+
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(3, 143px);
+    grid-gap: 10px;
+    max-height: 297px;
+    overflow: hidden;
+    transition: all.5s ease;
+}
+
+.insta:hover .galerie {
+    max-height: 605px;
+}
+
+.feed_stories {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    margin: 0 auto -18px;
+    padding: 10px 0 15px;
+}
+
+.feed_stories::-webkit-scrollbar {height: 2px}
+
+.feed_stories div {
+    text-align: center;
+    margin: 0 10px;
+}
+
+.feed_stories div b {
+    display:block; text-align: center; font-size: .6rem
+}
+
+.feed_stories img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    object-fit: cover;
+    border-radius: 50%;
+    padding: 2px;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%);
+    -webkit-text-fill-color: transparent;
+}
+
+.feed {
+    display: grid;
+    grid-template: 143px / 143px;
+    cursor: pointer;
+}
+
+.feed-info {
+    grid-row: 1;
+    grid-column: 1;
+    width: 143px;
+    height: 143px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .3s;
+    color: white;
+}
+
+.feed-info span {
+    display: block;
+    margin: 0 10px;
+}
+
+.feed-info span i {
+    color: white !important;
+    font-weight: 900;
+}
+
+.feed:hover .feed-info {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 1;
+}
+
+.feed-type {
+    grid-row: 1;
+    grid-column: 1;
+    width: 143px;
+    height: 143px;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+.feed-type i {
+    display: block;
+    margin: 10px;
+    color: white !important;
+}
+
+.feed img {
+    grid-row: 1;
+    grid-column: 1;
+    display: block;
+    width: 143px;
+    height: 143px;
+    object-fit: cover;
+}
+
+.loader {
+    width: 16px;
+    height: 16px;
+    border: 3px solid #999;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: loader 1s linear infinite;
+    box-sizing: content-box !important;
+}
+
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+credit {
+    display: block;
+    font-size: 6px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+}
