@@ -14,7 +14,10 @@ verif::after {
     font-size: 13px;
 }
 
-.insta {
+.insta *,
+.insta *::before,
+.insta *::after {
+    box-sizing: border-box;
     position: relative;
     width: 450px;
     background-color: #0f1011;
