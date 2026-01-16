@@ -22,7 +22,7 @@ verif::after {
     padding: 30px 10px;
     color: #999999;
     font-size: .8rem;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 .insta .profil {
